@@ -1,8 +1,6 @@
 #!/bin/bash
 
 time while IFS= read -r -d '' dir; do
-  # echo $dir
-	binary_name=$(echo $dir | sed -e 's/\(.* - \)*//g')
-  # echo $binary_name
+  binary_name=$(echo $dir | sed -e 's/\(.* - \)*//g')
 	go build -o bin/$binary_name "$dir"
 done < <(find . -type d -name "* - *" -print0)
