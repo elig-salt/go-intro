@@ -5,6 +5,10 @@ import (
 )
 
 func main() {
+	defer LastHi()
+	defer func() {
+		fmt.Println("Almost last hi")
+	}()
 
 	a := Hello()
 	fmt.Println(a)
@@ -23,4 +27,8 @@ func Hello() string {
 
 func TwoValues() (string, string) {
 	return "Hello", "World"
+}
+
+func LastHi() {
+	fmt.Println("Last HI!")
 }

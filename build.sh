@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while IFS= read -r -d '' dir; do
+time while IFS= read -r -d '' dir; do
   # echo $dir
 	binary_name=$(echo $dir | sed -e 's/\(.* - \)*//g')
   # echo $binary_name
