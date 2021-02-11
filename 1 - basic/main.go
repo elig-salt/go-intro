@@ -7,7 +7,6 @@ func main() {
 
 	// Variables can be declared with var
 	var b string
-	b = "Hello world"
 
 	// Variables can also be declared in a shorter way :=
 	// No type needed

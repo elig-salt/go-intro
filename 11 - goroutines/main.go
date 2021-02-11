@@ -5,7 +5,7 @@ package main
 // I get a beer for every time you fail
 
 func main() {
-	// Tricky1()
+	Tricky1()
 	// Tricky2()
-	Tricky3()
+	// Tricky3()
 }
